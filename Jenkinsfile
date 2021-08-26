@@ -13,7 +13,8 @@ stage ('Build') {
             }
  stage('Robot') {
             steps {
-                bat 'robot --variable BROWSER:headlesschrome -d Results Tests'
+                //bat 'robot --variable BROWSER:headlesschrome -d Results Tests'
+                 bat 'robot -d Results Tests'
             }
             post {
                 always {
