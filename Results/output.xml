@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.9.1 on win32)" generated="20210826 10:19:08.800" rpa="false">
+<suite id="s1" name="LabellingEbikelabelf" source="C:\cygwin64\home\robot\Tests\LabellingEbikelabelf.robot">
+<test id="s1-t1" name="User Login and uploads">
+<kw name="Begin Web Test" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>about:black</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20210826 10:19:09.183" level="INFO">Opening browser 'chrome' to base url 'about:black'.</msg>
+<status status="PASS" starttime="20210826 10:19:09.182" endtime="20210826 10:19:11.603"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210826 10:19:11.604" endtime="20210826 10:19:11.848"></status>
+</kw>
+<kw name="Go To URL">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+</arguments>
+<msg timestamp="20210826 10:19:11.850" level="INFO">Opening url 'https://app.labelf.ai/'</msg>
+<status status="PASS" starttime="20210826 10:19:11.849" endtime="20210826 10:19:16.396"></status>
+</kw>
+<kw name="Verify Page Loaded">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Labelf</arg>
+</arguments>
+<msg timestamp="20210826 10:19:16.439" level="INFO">Current page contains text 'Labelf'.</msg>
+<status status="PASS" starttime="20210826 10:19:16.397" endtime="20210826 10:19:16.440"></status>
+</kw>
+<status status="PASS" starttime="20210826 10:19:16.396" endtime="20210826 10:19:16.440"></status>
+</kw>
+<status status="PASS" starttime="20210826 10:19:11.848" endtime="20210826 10:19:16.440"></status>
+</kw>
+<status status="PASS" starttime="20210826 10:19:09.181" endtime="20210826 10:19:16.440"></status>
+</kw>
+<kw name="When User enters valid email and password">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="app"]/div/main/div/div/div/div/div/div[1]/form/div[1]/div[2]/div[1]/div/input</arg>
+<arg>${USERID}</arg>
+</arguments>
+<msg timestamp="20210826 10:19:16.444" level="INFO">Typing text 'Subhashini.penumatsa@iths.se' into text field 'xpath://*[@id="app"]/div/main/div/div/div/div/div/div[1]/form/div[1]/div[2]/div[1]/div/input'.</msg>
+<status status="PASS" starttime="20210826 10:19:16.443" endtime="20210826 10:19:17.600"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="password"]</arg>
+<arg>${PASSWORD}</arg>
+</arguments>
+<msg timestamp="20210826 10:19:17.601" level="INFO">Typing text 'test123' into text field 'xpath://*[@id="password"]'.</msg>
+<status status="PASS" starttime="20210826 10:19:17.600" endtime="20210826 10:19:17.837"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="app"]/div/main/div/div/div/div/div/div[2]/button</arg>
+</arguments>
+<msg timestamp="20210826 10:19:17.837" level="INFO">Clicking button 'xpath://*[@id="app"]/div/main/div/div/div/div/div/div[2]/button'.</msg>
+<status status="PASS" starttime="20210826 10:19:17.837" endtime="20210826 10:19:17.979"></status>
+</kw>
+<kw name="Wait Until Page Does Not Contain" library="SeleniumLibrary">
+<doc>Waits until ``text`` disappears from the current page.</doc>
+<arguments>
+<arg>(login, timeout=None, error=None)</arg>
+</arguments>
+<status status="PASS" starttime="20210826 10:19:17.979" endtime="20210826 10:19:18.016"></status>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20210826 10:19:18.016" endtime="20210826 10:19:18.017"></status>
+</kw>
+<status status="PASS" starttime="20210826 10:19:16.443" endtime="20210826 10:19:18.017"></status>
+</kw>
+<kw name="Verify Page Loaded">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Labelf</arg>
+</arguments>
+<msg timestamp="20210826 10:19:20.060" level="INFO">Current page contains text 'Labelf'.</msg>
+<status status="PASS" starttime="20210826 10:19:18.020" endtime="20210826 10:19:20.062"></status>
+</kw>
+<status status="PASS" starttime="20210826 10:19:18.020" endtime="20210826 10:19:20.064"></status>
+</kw>
+<kw name="User adds a new Dataset">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20210826 10:19:20.066" endtime="20210826 10:19:20.067"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20210826 10:19:22.071" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210826 10:19:20.067" endtime="20210826 10:19:22.072"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://html/body/div[1]/div/div[4]/div[1]/main/div/div/div[1]/a</arg>
+</arguments>
+<msg timestamp="20210826 10:19:22.072" level="INFO">Clicking element 'xpath://html/body/div[1]/div/div[4]/div[1]/main/div/div/div[1]/a'.</msg>
+<status status="PASS" starttime="20210826 10:19:22.072" endtime="20210826 10:19:24.162"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Add a dataset</arg>
+</arguments>
+<msg timestamp="20210826 10:19:26.197" level="INFO">Current page contains text 'Add a dataset'.</msg>
+<status status="PASS" starttime="20210826 10:19:24.162" endtime="20210826 10:19:26.197"></status>
+</kw>
+<status status="PASS" starttime="20210826 10:19:20.065" endtime="20210826 10:19:26.197"></status>
+</kw>
+<kw name="User uploads a dataset">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://html/body/div[1]/div/div[3]/div/div/div[2]/div/div/div[1]/div/div[2]/button/div</arg>
+</arguments>
+<msg timestamp="20210826 10:19:26.199" level="INFO">Clicking element 'xpath://html/body/div[1]/div/div[3]/div/div/div[2]/div/div/div[1]/div/div[2]/button/div'.</msg>
+<status status="PASS" starttime="20210826 10:19:26.198" endtime="20210826 10:19:28.371"></status>
+</kw>
+<kw name="Choose File" library="SeleniumLibrary">
+<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
+<arguments>
+<arg>//input[@id="fileUpload"]</arg>
+<arg>C:/all_1500_rows.csv</arg>
+</arguments>
+<msg timestamp="20210826 10:19:28.372" level="INFO">Sending C:\all_1500_rows.csv to browser.</msg>
+<status status="PASS" starttime="20210826 10:19:28.371" endtime="20210826 10:19:30.450"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://html/body/div[1]/div/div[3]/div/div/div[2]/div/div[2]/div/form/div[2]/button/div</arg>
+</arguments>
+<msg timestamp="20210826 10:19:30.450" level="INFO">Clicking element 'xpath://html/body/div[1]/div/div[3]/div/div/div[2]/div/div[2]/div/form/div[2]/button/div'.</msg>
+<status status="PASS" starttime="20210826 10:19:30.450" endtime="20210826 10:19:32.557"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Setup</arg>
+</arguments>
+<msg timestamp="20210826 10:19:34.612" level="INFO">Current page contains text 'Setup'.</msg>
+<status status="PASS" starttime="20210826 10:19:32.559" endtime="20210826 10:19:34.612"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://html/body/div[1]/div/div[3]/div/div/div[2]/div/div[4]/div/div/div[2]/button/div</arg>
+</arguments>
+<msg timestamp="20210826 10:19:34.613" level="INFO">Clicking element 'xpath://html/body/div[1]/div/div[3]/div/div/div[2]/div/div[4]/div/div/div[2]/button/div'.</msg>
+<status status="PASS" starttime="20210826 10:19:34.613" endtime="20210826 10:19:36.778"></status>
+</kw>
+<status status="PASS" starttime="20210826 10:19:26.198" endtime="20210826 10:19:36.780"></status>
+</kw>
+<kw name="User Name a dataset">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Name your dataset</arg>
+</arguments>
+<msg timestamp="20210826 10:19:38.832" level="INFO">Current page contains text 'Name your dataset'.</msg>
+<status status="PASS" starttime="20210826 10:19:36.784" endtime="20210826 10:19:38.833"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://html/body/div[1]/div/div[3]/div/div/div[2]/div/div[6]/div/form/div[1]/div/div/div[1]/div/div/div[1]/div/input</arg>
+<arg>Ebike</arg>
+</arguments>
+<msg timestamp="20210826 10:19:38.834" level="INFO">Typing text 'Ebike' into text field 'xpath://html/body/div[1]/div/div[3]/div/div/div[2]/div/div[6]/div/form/div[1]/div/div/div[1]/div/div/div[1]/div/input'.</msg>
+<status status="PASS" starttime="20210826 10:19:38.834" endtime="20210826 10:19:42.212"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://html/body/div[1]/div/div[3]/div/div/div[2]/div/div[6]/div/form/div[1]/div/div/div[2]/div/div/div[1]/div/textarea</arg>
+<arg>Ebike dataset</arg>
+</arguments>
+<msg timestamp="20210826 10:19:42.213" level="INFO">Typing text 'Ebike dataset' into text field 'xpath://html/body/div[1]/div/div[3]/div/div/div[2]/div/div[6]/div/form/div[1]/div/div/div[2]/div/div/div[1]/div/textarea'.</msg>
+<status status="PASS" starttime="20210826 10:19:42.213" endtime="20210826 10:19:45.639"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://html/body/div[1]/div/div[3]/div/div/div[2]/div/div[6]/div/form/div[2]/button/div</arg>
+</arguments>
+<msg timestamp="20210826 10:19:45.641" level="INFO">Clicking element 'xpath://html/body/div[1]/div/div[3]/div/div/div[2]/div/div[6]/div/form/div[2]/button/div'.</msg>
+<status status="PASS" starttime="20210826 10:19:45.640" endtime="20210826 10:19:47.828"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>Datasets</arg>
+</arguments>
+<status status="PASS" starttime="20210826 10:19:47.828" endtime="20210826 10:19:48.850"></status>
+</kw>
+<status status="PASS" starttime="20210826 10:19:36.782" endtime="20210826 10:19:48.850"></status>
+</kw>
+<kw name="User starts labelling">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="app"]/div[5]/div[1]/main/div/div/div[2]/div/div[1]/div/div[2]/a/div</arg>
+</arguments>
+<msg timestamp="20210826 10:19:48.855" level="INFO">Clicking element 'xpath://*[@id="app"]/div[5]/div[1]/main/div/div/div[2]/div/div[1]/div/div[2]/a/div'.</msg>
+<status status="PASS" starttime="20210826 10:19:48.854" endtime="20210826 10:19:50.940"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Set your Task Question</arg>
+</arguments>
+<msg timestamp="20210826 10:19:52.972" level="INFO">Current page contains text 'Set your Task Question'.</msg>
+<status status="PASS" starttime="20210826 10:19:50.941" endtime="20210826 10:19:52.972"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="app"]/div[2]/div/div/form/div[1]/div/div/div/div/div/div[1]/div/input</arg>
+<arg>how can we check our order</arg>
+</arguments>
+<msg timestamp="20210826 10:19:52.972" level="INFO">Typing text 'how can we check our order' into text field 'xpath://*[@id="app"]/div[2]/div/div/form/div[1]/div/div/div/div/div/div[1]/div/input'.</msg>
+<status status="PASS" starttime="20210826 10:19:52.972" endtime="20210826 10:19:56.412"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="app"]/div[2]/div/div/form/div[2]/button/div</arg>
+</arguments>
+<msg timestamp="20210826 10:19:56.414" level="INFO">Clicking element 'xpath://*[@id="app"]/div[2]/div/div/form/div[2]/button/div'.</msg>
+<status status="PASS" starttime="20210826 10:19:56.413" endtime="20210826 10:19:58.621"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Add a new label</arg>
+</arguments>
+<msg timestamp="20210826 10:20:00.679" level="INFO">Current page contains text 'Add a new label'.</msg>
+<status status="PASS" starttime="20210826 10:19:58.621" endtime="20210826 10:20:00.679"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="app"]/div[2]/div/div/form/div[2]/div/div/div[1]/div/div/div[1]/div/input</arg>
+<arg>Sales</arg>
+</arguments>
+<msg timestamp="20210826 10:20:00.679" level="INFO">Typing text 'Sales' into text field 'xpath://*[@id="app"]/div[2]/div/div/form/div[2]/div/div/div[1]/div/div/div[1]/div/input'.</msg>
+<status status="PASS" starttime="20210826 10:20:00.679" endtime="20210826 10:20:03.908"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="app"]/div[2]/div/div/form/div[3]/button/div</arg>
+</arguments>
+<msg timestamp="20210826 10:20:03.911" level="INFO">Clicking element 'xpath://*[@id="app"]/div[2]/div/div/form/div[3]/button/div'.</msg>
+<status status="PASS" starttime="20210826 10:20:03.910" endtime="20210826 10:20:06.090"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="app"]/div[2]/div/div/form/div[1]/div/div/div/div/div/div[1]/div/textarea</arg>
+<arg>Order history</arg>
+</arguments>
+<msg timestamp="20210826 10:20:06.092" level="INFO">Typing text 'Order history' into text field 'xpath://*[@id="app"]/div[2]/div/div/form/div[1]/div/div/div/div/div/div[1]/div/textarea'.</msg>
+<status status="PASS" starttime="20210826 10:20:06.091" endtime="20210826 10:20:09.506"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="app"]/div[2]/div/div/form/div[2]/button/div</arg>
+</arguments>
+<msg timestamp="20210826 10:20:09.508" level="INFO">Clicking element 'xpath://*[@id="app"]/div[2]/div/div/form/div[2]/button/div'.</msg>
+<status status="PASS" starttime="20210826 10:20:09.507" endtime="20210826 10:20:11.665"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Added Labels</arg>
+</arguments>
+<msg timestamp="20210826 10:20:13.708" level="INFO">Current page contains text 'Added Labels'.</msg>
+<status status="PASS" starttime="20210826 10:20:11.665" endtime="20210826 10:20:13.708"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="app"]/div[1]/div/div/div[3]/a/div/span</arg>
+</arguments>
+<msg timestamp="20210826 10:20:13.709" level="INFO">Clicking element 'xpath://*[@id="app"]/div[1]/div/div/div[3]/a/div/span'.</msg>
+<status status="PASS" starttime="20210826 10:20:13.709" endtime="20210826 10:20:15.833"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="app"]/div[2]/div/div/form/div[2]/div/div/div[1]/div/div/div[1]/div/input</arg>
+<arg>payment</arg>
+</arguments>
+<msg timestamp="20210826 10:20:15.834" level="INFO">Typing text 'payment' into text field 'xpath://*[@id="app"]/div[2]/div/div/form/div[2]/div/div/div[1]/div/div/div[1]/div/input'.</msg>
+<status status="PASS" starttime="20210826 10:20:15.833" endtime="20210826 10:20:19.111"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="app"]/div[2]/div/div/form/div[3]/button/div</arg>
+</arguments>
+<msg timestamp="20210826 10:20:19.114" level="INFO">Clicking element 'xpath://*[@id="app"]/div[2]/div/div/form/div[3]/button/div'.</msg>
+<status status="PASS" starttime="20210826 10:20:19.112" endtime="20210826 10:20:21.232"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="app"]/div[2]/div/div/form/div[1]/div/div/div/div/div/div[1]/div/textarea</arg>
+<arg>payment history</arg>
+</arguments>
+<msg timestamp="20210826 10:20:21.234" level="INFO">Typing text 'payment history' into text field 'xpath://*[@id="app"]/div[2]/div/div/form/div[1]/div/div/div/div/div/div[1]/div/textarea'.</msg>
+<status status="PASS" starttime="20210826 10:20:21.233" endtime="20210826 10:20:24.622"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="app"]/div[2]/div/div/form/div[2]/button/div</arg>
+</arguments>
+<msg timestamp="20210826 10:20:24.623" level="INFO">Clicking element 'xpath://*[@id="app"]/div[2]/div/div/form/div[2]/button/div'.</msg>
+<status status="PASS" starttime="20210826 10:20:24.622" endtime="20210826 10:20:26.788"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Ebike</arg>
+</arguments>
+<msg timestamp="20210826 10:20:28.839" level="INFO">Current page contains text 'Ebike'.</msg>
+<status status="PASS" starttime="20210826 10:20:26.788" endtime="20210826 10:20:28.840"></status>
+</kw>
+<status status="PASS" starttime="20210826 10:19:48.852" endtime="20210826 10:20:28.841"></status>
+</kw>
+<kw name="End Web Test" type="teardown">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210826 10:20:28.847" endtime="20210826 10:20:32.143"></status>
+</kw>
+<status status="PASS" starttime="20210826 10:20:28.845" endtime="20210826 10:20:32.144"></status>
+</kw>
+<doc>login and upload a dataset</doc>
+<tags>
+<tag>lt 11</tag>
+</tags>
+<status status="PASS" starttime="20210826 10:19:09.180" endtime="20210826 10:20:32.145" critical="yes"></status>
+</test>
+<doc>Test login to labelf, uploading Ebike dataset, Labelling dataset</doc>
+<status status="PASS" starttime="20210826 10:19:08.803" endtime="20210826 10:20:32.148"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0">lt 11</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="LabellingEbikelabelf">LabellingEbikelabelf</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
