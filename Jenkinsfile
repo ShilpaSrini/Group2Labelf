@@ -11,6 +11,18 @@ stage ('Build') {
                      bat "mvn compile"
                 }
             }
+     stage('newman') {
+						steps {
+						   sleep(20)
+							sh 'newman run  petclinic.postman_collection.json --environment petclinic.postman_environment.json --reporters junit'
+						}
+						post {
+							always {
+									junit '**/*xml'
+								}
+							}
+					}
+		   		
  stage('Robot') {
             steps {
                 //bat 'robot --variable BROWSER:headlesschrome -d Results Tests'
