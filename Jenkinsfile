@@ -14,7 +14,7 @@ stage ('Build') {
      stage('newman') {
 						steps {
 						   sleep(20)
-							sh 'newman run  petclinic.postman_collection.json --environment petclinic.postman_environment.json --reporters junit'
+							bat 'newman run  petclinic.postman_collection.json --environment petclinic.postman_environment.json --reporters junit'
 						}
 						post {
 							always {
