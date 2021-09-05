@@ -14,7 +14,7 @@ stage ('Build') {
      stage('newman') {
 			 steps {
 				   sleep(20)
-			     	bat 'newman run  Labelf.postman_collection.json --environment LabelfEnvironment.postman_environment.json --reporters junit'
+			     	bat 'newman run  Labelf.postman_collection.json --environment LabelfEnvironment.postman_environment.json'
 				}
 					
 		   		
@@ -22,6 +22,12 @@ stage ('Build') {
             steps {
                 //bat 'robot --variable BROWSER:headlesschrome -d Results Tests'
                  bat 'robot -d Results Tests'
+		    
+		    post {
+							always {
+									junit '**/*xml'
+								}
+							}
             }
             post {
                 always {
