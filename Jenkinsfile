@@ -16,7 +16,12 @@ stage ('Build') {
 				   sleep(20)
 			     	bat 'newman run  Labelf.postman_collection.json --environment LabelfEnvironment.postman_environment.json'
 				}
-					
+			  post {
+					always {
+							junit '**/*xml'
+						}
+				}
+		}		
 		   		
  stage('Robot') {
             steps {
