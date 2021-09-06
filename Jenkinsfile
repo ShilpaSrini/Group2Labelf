@@ -28,11 +28,7 @@ stage ('Build') {
                 //bat 'robot --variable BROWSER:headlesschrome -d Results Tests'
                  bat 'robot -d Results Tests'
 		    
-		    post {
-							always {
-									junit '**/*xml'
-								}
-							}
+		    
             }
             post {
                 always {
