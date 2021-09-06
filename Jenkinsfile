@@ -12,18 +12,24 @@ stage ('Build') {
                 }
             }
      stage('newman') {
-			 steps {
-				   sleep(20)
-			     	bat 'newman run  /Postman/Labelf.postman_collection.json --environment /Postman/LabelfProject.postman_environment.json'
-				}
-			  post {
-					always {
-							junit '**/*xml'
-						}
-				}
-		}		
-		   		
- //stage('Robot') { steps { //bat 'robot --variable BROWSER:headlesschrome -d Results Tests'  bat 'robot -d Results Tests' }
+             steps {
+                   sleep(20)
+                     bat 'newman run  /Postman/Labelf.postman_collection.json --environment /Postman/LabelfProject.postman_environment.json'
+                }
+              post {
+                    always {
+                            junit '**/*xml'
+                        }
+                }
+        }        
+                   
+ stage('Robot') {
+            steps {
+                //bat 'robot --variable BROWSER:headlesschrome -d Results Tests'
+                 bat 'robot -d Results Tests'
+            
+            
+            }
             post {
                 always {
                     script {
@@ -46,5 +52,4 @@ stage ('Build') {
                  
         }
 }
-
-
+}
