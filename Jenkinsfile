@@ -14,7 +14,7 @@ stage ('Build') {
      stage('newman') {
 			 steps {
 				   sleep(20)
-			     	bat 'newman run  Labelf.postman_collection.json --environment LabelfEnvironment.postman_environment.json'
+			     	bat 'newman run  Labelf.postman_collection.json --environment LabelfProject.postman_environment.json'
 				}
 			  post {
 					always {
