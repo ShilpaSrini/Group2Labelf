@@ -6,59 +6,6 @@
 	},
 	"item": [
 		{
-			"name": "New Folder",
-			"item": [
-				{
-					"name": "Inference on multi model",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"exec": [
-									"pm.test(\"Status code is 200\", () => pm.expect(responseCode.code).to.equal(200));"
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": [
-								{
-									"key": "token",
-									"value": "B8g7FazjFIixfqIV5nXhc_hTvjvizy5A6Aw9hClDGgM.uLVOR1u8I3bt7bunLKrFR7A9_n7h6NLN9B5pA5PEgtk",
-									"type": "string"
-								}
-							]
-						},
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"model_setting\":[{\"model_id\":197},{\"model_id\":202}],\r\n    \"texts\":[\"what is the price?\"]\r\n}"
-						},
-						"url": {
-							"raw": "https://api.app.labelf.ai/v2/models/inference",
-							"protocol": "https",
-							"host": [
-								"api",
-								"app",
-								"labelf",
-								"ai"
-							],
-							"path": [
-								"v2",
-								"models",
-								"inference"
-							]
-						}
-					},
-					"response": []
-				}
-			]
-		},
-		{
 			"name": "Obtain Bearer Token",
 			"event": [
 				{
