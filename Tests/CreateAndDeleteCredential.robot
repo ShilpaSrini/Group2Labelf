@@ -38,8 +38,8 @@ Login to the application
     Page Should Contain             Datasets
 
 Enter into the chosen dataset by clicking OVERVIEW
-    Mouse down         xpath://*[@id="app"]/div[8]/div[1]/main/div/div/div[2]/div/div[3]/div/div[2]/a/div
-    Click Element      xpath://*[@id="app"]/div[8]/div[1]/main/div/div/div[2]/div/div[3]/div/div[2]/a/div
+    Mouse down         xpath://*[@id="app"]/div[11]/div[1]/main/div/div/div[2]/div/div[3]/div/div[2]/a/div
+    Click Element      xpath://*[@id="app"]/div[11]/div[1]/main/div/div/div[2]/div/div[3]/div/div[2]/a/div
     Wait Until Page Contains     Test your model
     Page Should Contain          Test your model
 
