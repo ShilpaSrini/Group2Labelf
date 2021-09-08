@@ -6,24 +6,8 @@ pipeline {
                git 'https://github.com/SubhashiniPenumatsa/Group2Labelf'
           }
      }
-stage ('Build') {
-              steps {
-                     bat "mvn compile"
-                }
-            }
-     stage('newman') {
-             steps {
-                   sleep(20)
-                     bat 'newman run  /Postman/Labelf.postman_collection.json --environment /Postman/LabelfProject.postman_environment.json'
-                }
-              post {
-                    always {
-                            junit '**/*xml'
-                        }
-                }
-        }        
-                   
- stage('Robot') {
+
+     stage('Robot') {
             steps {
                 //bat 'robot --variable BROWSER:headlesschrome -d Results Tests'
                  bat 'robot -d Results Tests'
@@ -51,5 +35,16 @@ stage ('Build') {
             }
                  
         }
+             stage('newman') {
+             steps {
+                   sleep(5)
+                     bat 'newman run /Postman/Labelf_API.postman_collection.json --environment /Postman/Labelf.postman_environment.json'
+                }
+              post {
+                    always {
+                            junit '**/*xml'
+                        }
+                }
+        } 
 }
 }
