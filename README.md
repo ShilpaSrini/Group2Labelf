@@ -15,6 +15,8 @@ The arrangement of the works we could see clearly from Jira and the table below:
 
 link to Jira: [LT-anslagstavla - Agile board - Jira (atlassian.net)]( )
 
+(git-res/testcases 1.png) 
+
 
 |Sprint Name|Numbers of test cases|
 | :-: | :-: |
