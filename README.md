@@ -29,9 +29,9 @@ Automated tests are stored in Github, and the manual tests are stored in an exce
 
 Automated tests: [SubhashiniPenumatsa/Group2Labelf (github.com)](https://github.com/SubhashiniPenumatsa/Group2Labelf)
 
-Manual tests: [mall.xlsx (sharepoint.com)]( )
+Manual tests: [mall.xlsx (sharepoint.com)](https://ithogskolan-my.sharepoint.com/:x:/r/personal/mattias_hovde_iths_se/_layouts/15/doc2.aspx?sourcedoc=%7BCCC15AA2-012B-4831-8755-FB50146C2A73%7D&file=mall.xlsx&action=default&mob=&cid=92948d91-d5ff-4f0a-ba26-81ef8b309dc1 )
 
-link to Bugs: [Bugs & Improvements - Google Kalkylark]( l )
+link to Bugs: [Bugs & Improvements - Google Kalkylark](https://docs.google.com/spreadsheets/d/17-tFI6LilWOn7rt_VXN7V-F64qXNBCl6ifn6tzZ0KCc/edit#gid=0)
 
 
 
