@@ -3,6 +3,8 @@
 ------------------------------------------------------------------------
 Project for IT-Högskolan's test automation course 2021(for Agile project )
 
+![alt Labelf(https://github.com/SubhashiniPenumatsa/Group2Labelf/blob/master/git-res/labelf.png)
+
 Courtesy  ![alt petclinic-junit](git-res/infotiv.png) and ![alt petclinic-junit](git-res/iths.png) 
 https://github.com/SubhashiniPenumatsa/Group2Labelf/blob/master/git-res/iths.PNG
 =========================================================================
