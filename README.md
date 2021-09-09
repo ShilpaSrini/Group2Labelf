@@ -1,6 +1,6 @@
 # Group2Labelf
 
-Courtesy  (git-res/testcasese1.png) and ![alt petclinic-junit](git-res/iths.png) 
+Courtesy  [alt Group2Labelf](git-res/testcasese1.png) and ![alt petclinic-junit](git-res/iths.png) 
 
 **Labelf Project -- Group 2**
 **
