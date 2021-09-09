@@ -37,7 +37,7 @@ pipeline {
         }
              stage('newman') {
              steps {
-                   sleep(5)
+                   
                      bat 'newman run /Postman/Labelf.postman_collection.json --environment /Postman/LabelfProject.postman_environment.json'
                 }
               post {
