@@ -220,7 +220,7 @@
 					}
 				},
 				"url": {
-					"raw": "https://api.app.labelf.ai/v2/models/262/inference",
+					"raw": "https://api.app.labelf.ai/v2/models/312/inference",
 					"protocol": "https",
 					"host": [
 						"api",
@@ -250,7 +250,7 @@
 							"var jsonData = pm.response.json();\r",
 							"\r",
 							"pm.test('Number of models = ' + jsonData.length, function () {\r",
-							"    pm.expect(jsonData.length).to.equal(4);\r",
+							"    pm.expect(jsonData.length).to.equal(1);\r",
 							"\r",
 							"});\r",
 							"\r",
