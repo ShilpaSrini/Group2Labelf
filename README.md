@@ -1,12 +1,11 @@
 # Repository    
-## By Ultimate Testers
+## By Group2
 ------------------------------------------------------------------------
-Project for IT-Högskolan's test automation course 2021(for Agile project )
+Project for IT-Högskolan's testing Automation and Agile course course 2021 For Labelf Client
 
-![alt Labelf(https://github.com/SubhashiniPenumatsa/Group2Labelf/blob/master/git-res/labelf.png)
+![alt Labelf](https://github.com/SubhashiniPenumatsa/Group2Labelf/blob/master/git-res/labelf.png)
 
-Courtesy  ![alt petclinic-junit](git-res/infotiv.png) and ![alt petclinic-junit](git-res/iths.png) 
-https://github.com/SubhashiniPenumatsa/Group2Labelf/blob/master/git-res/iths.PNG
+Courtesy 
 =========================================================================
 ## This Repository contains 
 
