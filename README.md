@@ -23,6 +23,21 @@ link to Jira: [LT-anslagstavla - Agile board - Jira (atlassian.net)]( )
 
 
 
+**Structure:**
+FOlders
+
+Automated test cases
+
+Manual test cases
+
+Robot Results
+      Resources
+      Tests
+
+jenkinsfile
+readme.md
+
+
 **Results:**
 
 Automated tests are stored in Github, and the manual tests are stored in an excel film. Five bugs are found under the project. 
