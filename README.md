@@ -3,9 +3,8 @@
 ------------------------------------------------------------------------
 Project for IT-Högskolan's testing Automation and Agile course course 2021 For Labelf Client
 
-![alt Labelf](https://github.com/SubhashiniPenumatsa/Group2Labelf/blob/master/git-res/labelf.png)
 
-Courtesy 
+Courtesy  ![alt Labelf](https://github.com/SubhashiniPenumatsa/Group2Labelf/blob/master/git-res/labelf.png)
 =========================================================================
 ## This Repository contains 
 
