@@ -1,6 +1,7 @@
 # Group2Labelf
 
-Courtesy  [alt Group2Labelf](git-res/labelf.png) and ![alt petclinic-junit](git-res/iths.png) 
+Courtesy  [alt Group2Labelf](git-res/labelf.png) and ![alt petclinic-junit](git-res/iths.png)
+https://github.com/SubhashiniPenumatsa/Group2Labelf/blob/master/git-res/iths.PNG
 
 **Labelf Project -- Group 2**
 **
