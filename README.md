@@ -33,5 +33,5 @@ Manual tests: [mall.xlsx (sharepoint.com)]( )
 
 link to Bugs: [Bugs & Improvements - Google Kalkylark]( l )
 
-KPI?
+
 
