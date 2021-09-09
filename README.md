@@ -32,18 +32,6 @@ link to Jira: [LT-anslagstavla - Agile board - Jira (atlassian.net)]( )
 ![alt Labelf](https://github.com/SubhashiniPenumatsa/Group2Labelf/blob/master/git-res/testcases1.PNG)
 
 
-|Sprint Name|Numbers of test cases|
-| :-: | :-: |
-|     |     |Manual     |Robot Framework       |Postman       |Jmeter         |Total|
-|   Sprint 1|Dataset And Model                 |3             |1              |     |
-|   Sprint 2|Deployment of APIs                |3             |1              |1    |
-|   |About credentials and bearer token        |2             |2              |3    |
-|   |Inference on the models                   |3             |3             |1    |
-||          |Manual     |Robot Framework       |Postman       |Jmeter         |Total|
-||total     |11         |4                     |7             |1              |23|
-
-
-Table 1: Test cases
 
 **Results:**
 
