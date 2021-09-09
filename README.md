@@ -6,18 +6,8 @@ Project for IT-Högskolan's testing Automation and Agile course course 2021 For 
 
 Courtesy  ![alt Labelf](https://github.com/SubhashiniPenumatsa/Group2Labelf/blob/master/git-res/labelf.png) and ![alt Labelf](https://github.com/SubhashiniPenumatsa/Group2Labelf/blob/master/git-res/iths.PNG)
 =========================================================================
+
 ## This Repository contains 
-
-
-
-# Group2Labelf
-
-Courtesy  [alt Group2Labelf](git-res/labelf.png) and ![alt petclinic-junit](git-res/iths.png)
-(https://github.com/SubhashiniPenumatsa/Group2Labelf/blob/master/git-res/iths.PNG)
-
-**Labelf Project -- Group 2**
-**
-
 
 **Goals:**
 
