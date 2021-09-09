@@ -4,7 +4,7 @@
 Project for IT-Högskolan's test automation course 2021(for Agile project )
 
 Courtesy  ![alt petclinic-junit](git-res/infotiv.png) and ![alt petclinic-junit](git-res/iths.png) 
-
+https://github.com/SubhashiniPenumatsa/Group2Labelf/blob/master/git-res/iths.PNG
 =========================================================================
 ## This Repository contains 
 
@@ -13,7 +13,7 @@ Courtesy  ![alt petclinic-junit](git-res/infotiv.png) and ![alt petclinic-junit]
 # Group2Labelf
 
 Courtesy  [alt Group2Labelf](git-res/labelf.png) and ![alt petclinic-junit](git-res/iths.png)
-https://github.com/SubhashiniPenumatsa/Group2Labelf/blob/master/git-res/iths.PNG
+(https://github.com/SubhashiniPenumatsa/Group2Labelf/blob/master/git-res/iths.PNG)
 
 **Labelf Project -- Group 2**
 **
