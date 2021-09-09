@@ -231,7 +231,7 @@
 					"path": [
 						"v2",
 						"models",
-						"262",
+						"312",
 						"inference"
 					]
 				}
@@ -320,7 +320,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://api.app.labelf.ai/v2/models/262",
+					"raw": "https://api.app.labelf.ai/v2/models/312",
 					"protocol": "https",
 					"host": [
 						"api",
@@ -331,7 +331,7 @@
 					"path": [
 						"v2",
 						"models",
-						"262"
+						"312"
 					]
 				}
 			},
@@ -378,7 +378,7 @@
 					}
 				},
 				"url": {
-					"raw": "https://api.app.labelf.ai/v2/models/262/inference?model_id=262",
+					"raw": "https://api.app.labelf.ai/v2/models/312/inference?model_id=312",
 					"protocol": "https",
 					"host": [
 						"api",
@@ -389,13 +389,13 @@
 					"path": [
 						"v2",
 						"models",
-						"262",
+						"312",
 						"inference"
 					],
 					"query": [
 						{
 							"key": "model_id",
-							"value": "262"
+							"value": "312"
 						}
 					]
 				}
