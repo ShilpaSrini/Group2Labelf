@@ -39,7 +39,7 @@ pipeline {
              steps {
                    
                      //bat 'newman run /Postman/Labelf.postman_collection.json --environment /Postman/LabelfProject.postman_environment.json'
-                       bat'newman run /Postman/Labelf.postman_collection.json -e /Postman/LabelfProject.postman_environment.json  --reporters cli,json --reporter-json-export /Results/outputfile.json'
+                       bat'newman run /Postman/Labelf.postman_collection.json -e /Postman/LabelfProject.postman_environment.json --reporters cli,json --reporter-json-export /Results/outputfile.json'
                 }
               post {
                     always {
