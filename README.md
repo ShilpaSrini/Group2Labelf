@@ -23,7 +23,7 @@ link to Jira: [LT-anslagstavla - Agile board - Jira (atlassian.net)]( )
 |   Sprint 2|Deployment of APIs                |3             |1              |1    |
 |   |About credentials and bearer token        |2             |2              |3    |
 |   |Inference on the models                   |3             |3             |1    |
-
+||          |Manual     |Robot Framework       |Postman       |Jmeter         |Total|
 ||total     |11         |4                     |7             |1              |23|
 
 
