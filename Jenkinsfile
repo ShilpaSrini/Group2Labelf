@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Checkout') {
        steps {
-               git 'https://github.com/SubhashiniPenumatsa/Group2Labelf'
+               git 'https://github.com/ShilpaSrini/Group2Labelf'
           }
      }
 
